@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2eded">
+
+    <LinearLayout
+        android:id="@+id/history_item_rl"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_no_network"
+            android:id="@+id/history_item_iv"/>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/history_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="白兵在中国"
+                android:textSize="16sp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/history_item_category"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#剧情/01'53 "
+                android:textSize="14sp"
+                android:textColor="#737272"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

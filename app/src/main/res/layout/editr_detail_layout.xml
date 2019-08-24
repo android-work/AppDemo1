@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/edit_back"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_back"/>
+
+        <TextView
+            android:id="@+id/edit_title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/edit_back"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更改名字"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+
+        <Button
+            android:id="@+id/edit_save"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/normal_editor"
+            android:text="保存"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:id="@+id/editor_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入想要更改的昵称"
+        android:textColor="#000"
+        android:textColorHint="#7b7575"/>
+
+    <TextView
+        android:id="@+id/edit_des"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="好名字可以让你感觉得劲"
+        android:textSize="16sp"
+        android:textColor="#c0998e8e"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/find_item_iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_no_network"/>
+    <TextView
+        android:id="@+id/find_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#000"
+        android:text="无形常伴》限时创作大赛最佳创意奖"/>
+    <TextView
+        android:id="@+id/find_item_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2d2c2c"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="#温情/05'01"/>
+</LinearLayout>

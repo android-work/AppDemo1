@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#1d1b1b"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/issue_back"
+            android:src="@mipmap/perview_back"/>
+        <TextView
+            android:layout_toRightOf="@+id/issue_back"
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:text="视频预览"/>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布"
+            android:textColor="#fff"
+            android:textSize="25dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/preview_ll"
+        android:layout_below="@+id/title_rl"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/operation_btn"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/draft"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="草稿"
+                android:textColor="#fff"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/next_bg"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/perview"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="发布"
+                android:layout_marginLeft="5dp"
+                android:textColor="#fff"
+                android:background="@drawable/next_bg"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save_local"
+            android:text="保存到本地"
+            android:checked="true"
+            android:layout_above="@+id/operation_btn"
+            android:textColor="#f5fd00"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#00ffffff"
+            android:textSize="15dp"
+            android:maxLength="60"
+            android:gravity="top"
+            android:id="@+id/preview_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textColorHint="#696868"
+            android:hint="写标题并使用合适的话题，能让更多人看到~"/>
+
+        <ImageView
+            android:layout_below="@+id/preview_et"
+            android:layout_above="@+id/save_local"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/preview_iv"
+            android:src="@mipmap/ic_launcher"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

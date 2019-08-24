@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/home_item_iv"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_below="@+id/home_item_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jay.appdemo1.ui.view.CricleImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/home_item_icon"/>
+
+        <LinearLayout
+            android:id="@+id/ll_des_sign"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/home_item_icon"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:background="#fff"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:id="@+id/home_item_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="东欧少女模特，向中国电商季迁移"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+            <TextView
+                android:paddingTop="5dp"
+                android:textSize="12sp"
+                android:textColor="#b000"
+                android:id="@+id/home_item_tv_des"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="东欧少女模特，向中国电商季迁移"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#b000"
+            android:id="@+id/home_item_tv_sign"
+            android:text="#影视"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

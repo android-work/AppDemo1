@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_iv"
+        android:src="@mipmap/ic_error"/>
+
+    <FrameLayout
+        android:background="#9fc4c4c7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:ellipsize="end"
+                android:textColor="#fff"
+                android:text="英国温情广告：战场上的圣诞快乐"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/tab_iv"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"></LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

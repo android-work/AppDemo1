@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_fl">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home_rl">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:id="@+id/home_swip"
+            android:layout_height="match_parent">
+
+            <com.jay.appdemo1.ui.view.ConsumeList
+
+                android:id="@+id/home_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </com.jay.appdemo1.ui.view.ConsumeList>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:background="#8bfcfcfc"
+                android:id="@+id/suspend_tv"
+                android:textSize="25sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="-Dec. 19,Brunch-"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/seach_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:src="@mipmap/ic_search_black"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/seach_iv_am"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:src="@mipmap/ic_search_black"/>
+</RelativeLayout>

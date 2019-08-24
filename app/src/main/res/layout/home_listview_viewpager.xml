@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/home_listview_vp">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/vp_tv_iv"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#9e9f9fa4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/vp_des"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:layout_height="wrap_content"
+            android:text="你给我的爱就像紫色烟花"
+            android:textColor="#fff"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

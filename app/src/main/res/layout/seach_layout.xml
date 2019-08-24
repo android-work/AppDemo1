@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ededed"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.SearchView
+            android:id="@+id/seach_"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            app:queryHint="帮你找到你感兴趣的视频"
+            app:closeIcon="@mipmap/ic_cancel"
+            android:background="@drawable/seach_bg"
+            app:iconifiedByDefault="false"
+            android:layout_weight="5"/>
+
+        <TextView
+            android:id="@+id/seach_cancel"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="#ababab"
+            android:text="取消"/>
+    </LinearLayout>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/seach_verlabry_ll"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="输入标题或描述中的关键词找到更多视频"
+                android:textColor="#989898"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-热门搜索词-"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <com.jay.appdemo1.ui.view.AutoButtonView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/auto_button_view"
+                app:horizontalSpace="3dp"
+                app:vertivalSpace="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/seach_result_ll"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/seach_result_tv"
+                android:textColor="#000"
+                android:text="-[好]搜索结果共219个-"/>
+
+            <com.jay.appdemo1.ui.view.ConsumeList
+                android:padding="10dp"
+                app:horizontalSpace="5dp"
+                app:vertivalSpace="5dp"
+                android:id="@+id/seach_result_lv"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.jay.appdemo1.ui.view.ConsumeList>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:visibility="invisible"
+            android:id="@+id/seach_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/seach_nodata_iv"
+                android:src="@mipmap/ic_nodata"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未找到相应的数据~~"
+                android:textColor="#989898"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/seach_nodata_iv"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

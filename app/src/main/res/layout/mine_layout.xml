@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/camera_rl"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/help"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_help" />
+            <com.jay.appdemo1.ui.view.CricleImageView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/mine_head"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/mine_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_head"
+                android:layout_centerHorizontal="true"
+                android:text="Aric"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:id="@+id/user_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看个人主页>"
+            android:textSize="15sp"
+            android:layout_below="@+id/mine_name"
+            android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_centerInParent="true"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@mipmap/ic_collection"/>
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/collection"
+                            android:layout_height="wrap_content"
+                            android:text="收藏"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>-->
+                <!--<View
+                    android:layout_marginTop="10dp"
+                    android:layout_width="2dp"
+                    android:background="#737373"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_centerInParent="true"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@mipmap/ic_commend"/>
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/comment"
+                            android:layout_height="wrap_content"
+                            android:text="评论"
+                            android:textSize="18sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/mime_works"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="我的作品"
+                android:textSize="18sp"
+                android:layout_gravity=""/>
+            <TextView
+                android:id="@+id/mime_focus"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="我的关注"
+                android:textSize="18sp"
+                android:layout_gravity=""/>
+            <TextView
+                android:id="@+id/mime_cache"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="本地草稿箱"
+                android:textSize="18sp"
+                android:layout_gravity=""/>
+            <TextView
+                android:id="@+id/view_record"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="观看记录"
+                android:textSize="18sp"
+                android:layout_gravity=""/>
+            <TextView
+                android:id="@+id/suggestion"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="意见反馈"
+                android:textSize="18sp"
+                android:layout_gravity=""/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--默认该布局是隐藏的状态，当点击头像的时候向上滑动出现，
+    当再次点击头像时，该布局向下滑动隐藏  -->                                                                                           -->
+    <LinearLayout
+        android:id="@+id/camera_ll"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_height="160dp">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/from_photo"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="从相册选择图片"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#787777"/>
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/from_camera"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="拍照"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#787777"/>
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/cancel"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="取消"/>
+    </LinearLayout>
+</RelativeLayout>

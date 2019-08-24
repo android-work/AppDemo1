@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/rank_item_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/ic_no_network" />
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rank_des_tv"
+            android:text="这是一条单身狗看不懂的视频"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rank_duration_tv"
+            android:text="#搞笑/02'40'"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_below="@+id/rank_des_tv"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

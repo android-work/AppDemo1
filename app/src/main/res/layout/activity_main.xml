@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jay.appdemo1.ui.activity.MainActivity">
+
+    <FrameLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:id="@+id/fl">
+    </FrameLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#bf212020"/>
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/rg"
+        android:background="#30252424"
+        >
+
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/day_check"
+            android:textSize="10sp"
+            android:text="每日精选"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:checked="true"
+            android:paddingTop="10dp"
+            android:button="@null"
+            android:drawableTop="@drawable/home_btn_bg"/>
+
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/find"
+            android:textSize="10sp"
+            android:text="发现"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:button="@null"
+            android:drawableTop="@drawable/find_btn_bg"/>
+
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/photo"
+            android:textSize="10sp"
+            android:text="拍摄"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:button="@null"
+            android:drawableTop="@drawable/photo_btn_bg"/>
+
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/hot_drop"
+            android:textSize="10sp"
+            android:text="热门"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:button="@null"
+            android:drawableTop="@drawable/hot_btn_bg"/>
+
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/mine"
+            android:textSize="10sp"
+            android:text="我的"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:button="@null"
+            android:drawableTop="@drawable/mine_btn_bg"/>
+
+    </RadioGroup>
+
+</LinearLayout>

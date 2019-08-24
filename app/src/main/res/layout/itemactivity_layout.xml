@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <SurfaceView
+            android:id="@+id/item_sv"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+        <ProgressBar
+            android:id="@+id/item_pb"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>-->
+    <WebView
+        android:id="@+id/item_wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+    <!--<ListView
+        android:id="@+id/item_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>-->
+</LinearLayout>

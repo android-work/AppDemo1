@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:text="发现"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/find_focus_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="关注"
+                android:textColor="#2d2c2c"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/find_class_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="分类"
+                android:textColor="#2d2c2c"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8e212121"/>
+        <ImageView
+            android:id="@+id/find_line_lv"
+            android:layout_marginLeft="50dp"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="@mipmap/ic_line_bg"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/find_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

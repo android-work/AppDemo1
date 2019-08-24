@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="btn_background">#0eb8ca</color>
+    <color name="btn_nomal">#2000</color>
+    <color name="find_text_nomal">#2d2c2c</color>
+    <color name="find_text_select">#000</color>
+    <color name="find_class_acitivty_start">#fff</color>
+    <color name="find_class_acitivty_center">#696868</color>
+    <color name="find_class_acitivty_end">#000000</color>
+    <color name="find_class_acitivty_bg">#ffffff</color>
+    <color name="seach_hint_color">#ababab</color>
+    <color name="normal_state">#fff</color>
+    <color name="select_state">#b7b4a7a7</color>
+    <color name="normal_editor">#99ffa5</color>
+    <color name="focus_editor">#f628f940</color>
+    <color name="find_class_bg">#9affffff</color>
+    <color name="find_class_bg_cancel">#00ffffff</color>
+</resources>
